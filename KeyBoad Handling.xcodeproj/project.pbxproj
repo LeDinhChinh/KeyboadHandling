@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		840AA72621E7372400F7C718 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AA72521E7372400F7C718 /* AppDelegate.swift */; };
-		840AA72821E7372400F7C718 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AA72721E7372400F7C718 /* ViewController.swift */; };
 		840AA72B21E7372400F7C718 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840AA72921E7372400F7C718 /* Main.storyboard */; };
 		840AA72D21E7372500F7C718 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840AA72C21E7372500F7C718 /* Assets.xcassets */; };
 		840AA73021E7372500F7C718 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840AA72E21E7372500F7C718 /* LaunchScreen.storyboard */; };
 		840AA73B21E7372500F7C718 /* KeyBoad_HandlingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AA73A21E7372500F7C718 /* KeyBoad_HandlingTests.swift */; };
 		840AA74621E7372500F7C718 /* KeyBoad_HandlingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840AA74521E7372500F7C718 /* KeyBoad_HandlingUITests.swift */; };
+		8437A39E21E866AE00CFAB5D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8437A39D21E866AE00CFAB5D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		840AA72221E7372400F7C718 /* KeyBoad Handling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KeyBoad Handling.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840AA72521E7372400F7C718 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840AA72721E7372400F7C718 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840AA72A21E7372400F7C718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840AA72C21E7372500F7C718 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840AA72F21E7372500F7C718 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		840AA74121E7372500F7C718 /* KeyBoad HandlingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KeyBoad HandlingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		840AA74521E7372500F7C718 /* KeyBoad_HandlingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyBoad_HandlingUITests.swift; sourceTree = "<group>"; };
 		840AA74721E7372500F7C718 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8437A39D21E866AE00CFAB5D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				840AA72521E7372400F7C718 /* AppDelegate.swift */,
-				840AA72721E7372400F7C718 /* ViewController.swift */,
+				8437A39D21E866AE00CFAB5D /* ViewController.swift */,
 				840AA72921E7372400F7C718 /* Main.storyboard */,
 				840AA72C21E7372500F7C718 /* Assets.xcassets */,
 				840AA72E21E7372500F7C718 /* LaunchScreen.storyboard */,
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				840AA72821E7372400F7C718 /* ViewController.swift in Sources */,
+				8437A39E21E866AE00CFAB5D /* ViewController.swift in Sources */,
 				840AA72621E7372400F7C718 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

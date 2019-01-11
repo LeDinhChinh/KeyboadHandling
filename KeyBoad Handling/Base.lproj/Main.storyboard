@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zTf-MS-jRH">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="aAN-gx-Yyb">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController id="zTf-MS-jRH" customClass="ViewController" customModule="KeyBoad_Handling" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CtM-1T-Qoa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cle-nR-poC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZbT-a1-V45">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField B" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRb-cW-I1p">
+                                                <rect key="frame" x="26" y="311" width="323" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="zTf-MS-jRH" id="pta-yW-exY"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField C" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kze-oC-rCi">
+                                                <rect key="frame" x="26" y="515" width="323" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="zTf-MS-jRH" id="oNh-Yg-k7b"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="TextField A" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4aW-lQ-A1b">
+                                                <rect key="frame" x="26" y="114" width="323" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="zTf-MS-jRH" id="DJ3-rj-eJK"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ZbT-a1-V45" secondAttribute="bottom" id="6jW-ke-Z7U"/>
+                                    <constraint firstItem="ZbT-a1-V45" firstAttribute="top" secondItem="cle-nR-poC" secondAttribute="top" id="Lgu-Fn-UYe"/>
+                                    <constraint firstItem="ZbT-a1-V45" firstAttribute="width" secondItem="cle-nR-poC" secondAttribute="width" id="Mrm-3X-A1n"/>
+                                    <constraint firstItem="ZbT-a1-V45" firstAttribute="leading" secondItem="cle-nR-poC" secondAttribute="leading" id="R85-Ft-brD"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZbT-a1-V45" secondAttribute="trailing" id="hbS-6P-kik"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="cle-nR-poC" firstAttribute="top" secondItem="y8L-Xj-NnD" secondAttribute="top" id="EFs-uC-tfH"/>
+                            <constraint firstItem="ZbT-a1-V45" firstAttribute="height" secondItem="y8L-Xj-NnD" secondAttribute="height" id="WRg-Wh-6kr"/>
+                            <constraint firstItem="cle-nR-poC" firstAttribute="leading" secondItem="y8L-Xj-NnD" secondAttribute="leading" id="bwi-Tc-5JW"/>
+                            <constraint firstItem="cle-nR-poC" firstAttribute="bottom" secondItem="y8L-Xj-NnD" secondAttribute="bottom" id="qHU-sa-6cG"/>
+                            <constraint firstItem="cle-nR-poC" firstAttribute="trailing" secondItem="y8L-Xj-NnD" secondAttribute="trailing" id="x1a-i0-J70"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="y8L-Xj-NnD"/>
                     </view>
+                    <connections>
+                        <outlet property="constraintContentHeight" destination="WRg-Wh-6kr" id="7ac-nQ-Kxn"/>
+                        <outlet property="contentView" destination="ZbT-a1-V45" id="jOg-gI-NYw"/>
+                        <outlet property="scrollView" destination="cle-nR-poC" id="zI4-pM-Cxl"/>
+                        <outlet property="textFieldA" destination="4aW-lQ-A1b" id="lfk-Tg-Eei"/>
+                        <outlet property="textFieldB" destination="VRb-cW-I1p" id="cq1-FJ-QKG"/>
+                        <outlet property="textFieldC" destination="kze-oC-rCi" id="Gsx-jD-ncN"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d3J-tI-YIC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-66" y="-145"/>
         </scene>
     </scenes>
 </document>
